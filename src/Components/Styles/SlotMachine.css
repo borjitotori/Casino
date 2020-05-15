@@ -1,0 +1,145 @@
+.SlotMachine{
+    margin-top: 50px;
+    align-self: center;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    width: 50vw;
+    height: 35vw;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.StatusDisplay{
+    align-self: center;
+    background-color: rgb(34, 30, 30);
+    color: white;
+    font-size: 3vh;
+    margin: 5px;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow:   inset 0 0 10px #000000;
+}
+
+.SlotMachineDisplay{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SlotButtons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.SlotItem{
+    margin: 20px;
+    background-color: #96c8fb;
+    background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+    box-shadow:   inset 0 0 10px #000000;
+    font-size: 20vw;
+    color:white;
+    border-radius: 50px 20px;
+}
+
+.SlotButton{
+
+}
+
+.SlotStop{
+
+}
+
+.SlotBet{
+    color:black;
+    transition: color 0.5s;
+    font-size: 40px;
+}
+
+.SlotBet:hover{
+    color:red;
+}
+
+.SlotBet:active
+{
+    transition: color 0.1s;
+    color:green;
+}
+
+.SlotBetDisplay{
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    border:solid black 2px;
+    box-shadow:   inset 0 0 5px #000000;
+}
+
+.SlotGo{
+
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

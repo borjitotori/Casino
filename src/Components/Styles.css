@@ -1,0 +1,240 @@
+
+
+/*header*/
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.BalanceDisplay{
+    padding: 10px;
+    text-align: right;
+    width: 200px;
+    
+}
+
+.NameDisplay{
+    padding: 10px;
+
+
+}
+.CasinoName{
+    padding: 10px;
+    text-align: left;
+    width: 200px ;
+}
+/*log in*/
+.Login{
+    background-color: white;
+    padding: 10px;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.message {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+
+.input{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+.ButtonLog{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.ButtonLog:hover{
+  background: rgb(30, 82, 32);
+}
+/*Menu*/
+
+.Games{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Game{
+    margin: 50px;
+    background-color: black;
+    width: 20vw;
+    height: 30vw;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    color:white;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.BJ{
+    width: 20vw;
+    height: 30vw;
+    background-image: url("./../Assets/Blackjack-Table-1-scaled.jpg");
+    background-size: 20vw 30vw;
+}
+
+.SM{
+    width: 20vw;
+    height: 30vw;
+    background-image: url("./../Assets/Las_Vegas_slot_machines.jpg");
+    background-size: 20vw 30vw;
+}
+
+.R{
+    width: 20vw;
+    height: 30vw;
+    background-image: url("./../Assets/roulette.jpg");
+    background-size: 20vw 30vw;
+}
+
+.shine{
+    position:absolute;
+    overflow: hidden;
+    text-align: center;
+}
+
+.shine:after {
+    content: "";
+    position: absolute;
+      top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover state - trigger effect */
+  .shine:hover:after {
+    opacity: 1;
+    left: 130%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+
+  }
+  
+  /* Active state */
+  .shine:active:after {
+    opacity: 0;
+  }
+
+.test-shine{
+    width: 20vw;
+    height: 30vw;
+
+    background-image: url("./../Assets/Blackjack-Table-1-scaled.jpg");
+    background-size: 20vw 30vw;
+
+    position:absolute;
+    overflow: hidden;
+
+  }
+  
+  .test-shine:after {
+    content: "";
+    position: absolute;
+      top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+  
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  /* Hover state - trigger effect */
+  .test-shine:hover:after {
+    opacity: 1;
+    left: 130%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  
+  /* Active state */
+  .test-shine:active:after {
+    opacity: 0;
+  }
+
+.Add{
+  background-color: rgb(48, 38, 38);
+  width: fit-content;
+}
+.Logout{
+    background-color: rgb(250, 99, 82);
+      width: fit-content;
+  }
+
+.Add:hover{
+  background-color: darkgrey;
+  color:black;
+
+}
+.Logout:hover{
+  background-color: darkgrey;
+  color:black;
+}
+
+.back{
+  background-color:salmon;
+  transition:  background-color 1s;
+  color:salmon;
+  height: 20px;
+}
+
+.back:hover{
+  background-color: crimson;
+  transition:  background-color 1s;
+}
+
+.GameScreen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

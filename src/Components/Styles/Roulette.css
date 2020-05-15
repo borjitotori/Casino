@@ -1,0 +1,119 @@
+.RoulleteContainer{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+.RoulleteIMG{
+    width: 400px;
+    height: 400px;
+
+    object-fit: cover;
+    animation: App-logo-spin 20s linear infinite;
+    background-size: 20vw 30vw;
+}
+.RouletteResult{
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    font-size: 15px;
+
+    background-color: rgba(206, 26, 26, 0.644);
+    border-radius: 50%;
+}
+.RouletteText{
+    margin-top: 15vh;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1070%);
+}
+.RTgameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.glow-rt {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    margin: -20px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-rt:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-rt:active {
+    color: #000
+}
+
+.glow-rt:active:after {
+    background: transparent;
+}
+
+.glow-rt:hover:before {
+    opacity: 1;
+}
+
+.glow-rt:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .RoulleteIMG {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
